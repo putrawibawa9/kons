@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Proyek | Ronald Kogoya S.Ars</title>
+  <meta
+    name="description"
+    content="Halaman detail proyek Ronald Kogoya S.Ars yang menampilkan foto proyek dan informasi lengkap seperti lokasi, luas, tahun, dan deskripsi."
+  >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#eff6ff",
+              100: "#dbeafe",
+              500: "#2563eb",
+              700: "#1d4ed8",
+              900: "#0f172a"
+            }
+          },
+          fontFamily: {
+            sans: ["Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 20px 45px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="index.html" class="text-lg font-semibold tracking-wide text-slate-900">Ronald Kogoya S.Ars</a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <a href="index.html#beranda" class="transition hover:text-brand-500">Beranda</a>
+        <a href="index.html#tentang" class="transition hover:text-brand-500">Tentang</a>
+        <a href="index.html#proyek" class="transition hover:text-brand-500">Proyek</a>
+        <a href="index.html#kontak" class="transition hover:text-brand-500">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Detail Proyek -->
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-20">
+        <div>
+          <a
+            href="index.html#proyek"
+            class="inline-flex rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-700"
+          >
+            Kembali ke Daftar Proyek
+          </a>
+          <p class="mt-8 text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Detail Proyek</p>
+          <h1 id="project-title" class="mt-4 text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+            GKII Jemaat Tom Bozeman Wesapot
+          </h1>
+          <p id="project-summary" class="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+            Desain proyek yang menekankan karakter ruang, efisiensi fungsi, dan pendekatan material yang sesuai dengan konteks lokasi.
+          </p>
+        </div>
+
+        <div class="rounded-[2rem] bg-slate-900 p-8 text-white shadow-soft">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-300">Informasi Utama</p>
+          <div class="mt-8 grid gap-5 sm:grid-cols-2">
+            <div class="rounded-2xl bg-white/5 p-5">
+              <p class="text-xs uppercase tracking-[0.18em] text-slate-300">Lokasi</p>
+              <p id="project-location" class="mt-2 text-lg font-semibold">Distrik Assotipo</p>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-5">
+              <p class="text-xs uppercase tracking-[0.18em] text-slate-300">Luas</p>
+              <p id="project-area" class="mt-2 text-lg font-semibold">288 m2</p>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-5">
+              <p class="text-xs uppercase tracking-[0.18em] text-slate-300">Tahun</p>
+              <p id="project-year" class="mt-2 text-lg font-semibold">2025</p>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-5">
+              <p class="text-xs uppercase tracking-[0.18em] text-slate-300">Kategori</p>
+              <p id="project-category" class="mt-2 text-lg font-semibold">Bangunan Ibadah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri Proyek -->
+    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Foto Proyek</p>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">Visual presentasi proyek</h2>
+        </div>
+        <p class="max-w-xl text-sm leading-7 text-slate-600">
+          Sementara masih menggunakan placeholder. Nanti foto asli proyek bisa langsung menggantikan gambar-gambar ini tanpa mengubah struktur halaman.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <div class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img id="project-main-image" src="https://via.placeholder.com/900x600" alt="Foto utama proyek" class="h-full w-full object-cover">
+        </div>
+        <div class="grid gap-6">
+          <div class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+            <img id="project-side-image-1" src="https://via.placeholder.com/500x360" alt="Foto pendukung proyek 1" class="h-full w-full object-cover">
+          </div>
+          <div class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+            <img id="project-side-image-2" src="https://via.placeholder.com/500x360" alt="Foto pendukung proyek 2" class="h-full w-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <div class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img id="project-gallery-image-1" src="https://via.placeholder.com/400x300" alt="Galeri proyek 1" class="h-full w-full object-cover">
+        </div>
+        <div class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img id="project-gallery-image-2" src="https://via.placeholder.com/400x300" alt="Galeri proyek 2" class="h-full w-full object-cover">
+        </div>
+        <div class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img id="project-gallery-image-3" src="https://via.placeholder.com/400x300" alt="Galeri proyek 3" class="h-full w-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Deskripsi Proyek -->
+    <section class="border-y border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr] lg:px-8">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Deskripsi</p>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">Narasi desain dan pendekatan proyek.</h2>
+        </div>
+        <div class="rounded-[2rem] bg-slate-50 p-8 ring-1 ring-slate-200">
+          <p id="project-description" class="text-base leading-8 text-slate-600">
+            Desain proyek dikembangkan untuk menjawab kebutuhan fungsi, karakter visual, dan kesesuaian dengan lingkungan sekitar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="bg-slate-900">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr] lg:px-8">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-100">Kontak</p>
+          <h2 class="mt-4 text-3xl font-bold text-white">Ingin melihat lebih banyak karya atau berdiskusi tentang proyek baru?</h2>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-300">
+            Silakan hubungi saya untuk kebutuhan desain arsitektur, pengembangan konsep, maupun visualisasi proyek.
+          </p>
+        </div>
+
+        <div class="rounded-[2rem] bg-white p-8 shadow-soft">
+          <div class="space-y-6">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Email</p>
+              <a href="mailto:ronaldkogoya22@gmail.com" class="mt-2 block text-lg font-semibold text-slate-900 hover:text-brand-700">
+                ronaldkogoya22@gmail.com
+              </a>
+            </div>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">WhatsApp</p>
+              <a href="https://wa.me/6281215684830" class="mt-2 block text-lg font-semibold text-slate-900 hover:text-brand-700">
+                +62 812 1568 4830
+              </a>
+            </div>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Instagram</p>
+              <a href="https://instagram.com/rk_arsitek" class="mt-2 block text-lg font-semibold text-slate-900 hover:text-brand-700">
+                @rk_arsitek
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <p>&copy; 2026 Ronald Kogoya S.Ars. Seluruh hak cipta dilindungi.</p>
+      <p>Halaman detail proyek untuk presentasi portfolio arsitektur secara profesional.</p>
+    </div>
+  </footer>
+
+  <!-- Script Data Proyek -->
+  <script>
+    const projectData = {
+      "gkii-tom-bozeman-wesapot": {
+        title: "GKII Jemaat Tom Bozeman Wesapot",
+        location: "Distrik Assotipo",
+        area: "288 m2",
+        year: "2025",
+        category: "Bangunan Ibadah",
+        summary: "Desain gereja yang menyesuaikan karakter lingkungan Papua dengan pendekatan material yang kuat dan kontekstual.",
+        description: "Proyek GKII Jemaat Tom Bozeman Wesapot dirancang sebagai bangunan ibadah yang memiliki identitas kuat terhadap lingkungan sekitar. Penggunaan bata merah dan batu alam menjadi elemen penting untuk menghadirkan kesan kokoh, hangat, dan menyatu dengan konteks Papua. Tata ruang dirancang agar mampu mendukung aktivitas ibadah secara nyaman, sekaligus memberikan kualitas visual yang sederhana namun berkarakter.",
+        images: [
+          "https://via.placeholder.com/900x600",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300"
+        ]
+      },
+      "rumah-doa": {
+        title: "Rumah Doa",
+        location: "Lovina, Bali",
+        area: "Tidak disebutkan",
+        year: "2023",
+        category: "Bangunan Ibadah",
+        summary: "Rumah doa dengan konsep bentuk salib dan suasana ruang yang tenang melalui material natural.",
+        description: "Rumah Doa di Lovina Bali dikembangkan dengan inspirasi bentuk salib sebagai elemen utama konsep arsitekturnya. Pemilihan material natural diarahkan untuk membangun suasana yang hening, nyaman, dan reflektif. Desain ini menekankan hubungan antara bentuk, makna spiritual, dan kenyamanan ruang bagi penggunanya.",
+        images: [
+          "https://via.placeholder.com/900x600",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300"
+        ]
+      },
+      "villa-kg": {
+        title: "Villa KG",
+        location: "Canggu, Bali",
+        area: "Tidak disebutkan",
+        year: "2023",
+        category: "Villa",
+        summary: "Villa dengan pendekatan ruang yang menyatu dengan alam dan memaksimalkan material lokal.",
+        description: "Villa KG dirancang untuk menghadirkan pengalaman tinggal yang dekat dengan alam. Konsep utama proyek ini adalah membuka hubungan ruang dalam dan ruang luar secara lebih alami, sambil mempertahankan kenyamanan pengguna. Material lokal dipilih untuk memperkuat nuansa hangat, jujur, dan kontekstual terhadap lingkungan sekitar.",
+        images: [
+          "https://via.placeholder.com/900x600",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300"
+        ]
+      },
+      "pak-jendral-bintang-ii": {
+        title: "Pak Jendral Bintang II",
+        location: "Canggu, Bali",
+        area: "Tidak disebutkan",
+        year: "2022",
+        category: "Villa Bungalow",
+        summary: "Villa bungalow yang mengangkat inspirasi rumah tradisional Bali dengan kenyamanan modern.",
+        description: "Pak Jendral Bintang II merupakan proyek villa bungalow yang memadukan nilai estetika rumah tradisional Bali dengan kebutuhan ruang masa kini. Desain difokuskan pada identitas lokal, proporsi ruang yang nyaman, dan suasana menginap yang memiliki karakter kuat sekaligus tetap relevan secara fungsional.",
+        images: [
+          "https://via.placeholder.com/900x600",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300"
+        ]
+      },
+      "puskesmas-rawat-jalan": {
+        title: "Puskesmas Rawat Jalan",
+        location: "Sukawati",
+        area: "Tidak disebutkan",
+        year: "2022",
+        category: "Fasilitas Kesehatan",
+        summary: "Bangunan kesehatan dengan desain sederhana, efisien, dan mudah diterapkan di lapangan.",
+        description: "Puskesmas Rawat Jalan dirancang dengan pendekatan fungsional dan efisien, menyesuaikan kebutuhan pelayanan kesehatan yang tertata dengan baik. Material lokal menjadi salah satu pertimbangan agar proyek lebih mudah direalisasikan, sekaligus mempertahankan kualitas bangunan yang sesuai konteks dan kebutuhan pengguna.",
+        images: [
+          "https://via.placeholder.com/900x600",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300"
+        ]
+      },
+      "rumah-tinggal-keluarga": {
+        title: "Rumah Tinggal Keluarga",
+        location: "Denpasar, Bali",
+        area: "Tidak disebutkan",
+        year: "2024",
+        category: "Hunian",
+        summary: "Hunian modern tropis dengan tata ruang terang, nyaman, dan memiliki hubungan kuat dengan area luar.",
+        description: "Rumah Tinggal Keluarga dirancang sebagai hunian modern tropis yang menekankan pencahayaan alami, sirkulasi udara yang baik, dan koneksi visual ke area luar. Komposisi ruang disusun agar mendukung aktivitas harian keluarga dengan suasana yang tenang, terang, dan efisien.",
+        images: [
+          "https://via.placeholder.com/900x600",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/500x360",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300",
+          "https://via.placeholder.com/400x300"
+        ]
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const selectedProject = params.get("project");
+    const project = projectData[selectedProject] || projectData["gkii-tom-bozeman-wesapot"];
+
+    document.title = `${project.title} | Detail Proyek`;
+    document.getElementById("project-title").textContent = project.title;
+    document.getElementById("project-summary").textContent = project.summary;
+    document.getElementById("project-location").textContent = project.location;
+    document.getElementById("project-area").textContent = project.area;
+    document.getElementById("project-year").textContent = project.year;
+    document.getElementById("project-category").textContent = project.category;
+    document.getElementById("project-description").textContent = project.description;
+    document.getElementById("project-main-image").src = project.images[0];
+    document.getElementById("project-side-image-1").src = project.images[1];
+    document.getElementById("project-side-image-2").src = project.images[2];
+    document.getElementById("project-gallery-image-1").src = project.images[3];
+    document.getElementById("project-gallery-image-2").src = project.images[4];
+    document.getElementById("project-gallery-image-3").src = project.images[5];
+  </script>
+</body>
+</html>
