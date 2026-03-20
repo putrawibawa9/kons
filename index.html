@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronald Kogoya S.Ars | Portfolio Arsitek</title>
+  <meta
+    name="description"
+    content="Portfolio profesional Ronald Kogoya S.Ars, arsitek dengan pengalaman desain arsitektur, visualisasi, dan pengembangan proyek hunian, komersial, serta fasilitas publik."
+  >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#eff6ff",
+              100: "#dbeafe",
+              500: "#2563eb",
+              700: "#1d4ed8",
+              900: "#0f172a"
+            }
+          },
+          fontFamily: {
+            sans: ["Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 20px 45px rgba(15, 23, 42, 0.08)"
+          },
+          backgroundImage: {
+            grid: "radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.16) 1px, transparent 0)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#beranda" class="text-lg font-semibold tracking-wide text-slate-900">Ronald Kogoya S.Ars</a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <a href="#beranda" class="transition hover:text-brand-500">Beranda</a>
+        <a href="#tentang" class="transition hover:text-brand-500">Tentang</a>
+        <a href="#proyek" class="transition hover:text-brand-500">Proyek</a>
+        <a href="#kontak" class="transition hover:text-brand-500">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="beranda" class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-grid bg-[size:28px_28px] opacity-80"></div>
+      <div class="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-brand-50 via-white to-transparent"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
+        <div class="max-w-3xl">
+          <p class="mb-4 inline-flex rounded-full border border-brand-100 bg-white px-4 py-2 text-sm font-medium text-brand-700 shadow-sm">
+            Portfolio Profesional Arsitek
+          </p>
+          <h1 class="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            Ronald Kogoya S.Ars
+          </h1>
+          <p class="mt-4 text-xl font-semibold text-brand-700 sm:text-2xl">
+            Arsitek yang merancang ruang fungsional, kontekstual, dan berkarakter.
+          </p>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+            Berpengalaman dalam desain hunian, bangunan ibadah, fasilitas kesehatan, dan visualisasi arsitektur.
+            Mengedepankan pendekatan desain yang peka terhadap lingkungan, material lokal, dan kebutuhan pengguna.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a
+              href="#proyek"
+              class="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700"
+            >
+              Lihat Proyek
+            </a>
+            <a
+              href="#kontak"
+              class="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-700"
+            >
+              Hubungi Saya
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-2xl bg-slate-900 p-6 text-white">
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-300">Lahir</p>
+              <p class="mt-3 text-2xl font-semibold">01 Maret 1999</p>
+            </div>
+            <div class="rounded-2xl bg-brand-50 p-6">
+              <p class="text-sm uppercase tracking-[0.2em] text-brand-700">Posisi Terakhir</p>
+              <p class="mt-3 text-2xl font-semibold text-slate-900">Team Leader Architect</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-6 sm:col-span-2">
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-500">Fokus Keahlian</p>
+              <div class="mt-4 flex flex-wrap gap-2 text-sm font-medium text-slate-700">
+                <span class="rounded-full bg-slate-100 px-3 py-2">Desain Arsitektur</span>
+                <span class="rounded-full bg-slate-100 px-3 py-2">3D Modelling</span>
+                <span class="rounded-full bg-slate-100 px-3 py-2">Rendering</span>
+                <span class="rounded-full bg-slate-100 px-3 py-2">Dokumentasi Proyek</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="rounded-[2rem] bg-white p-8 shadow-soft">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Tentang Saya</p>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">Membangun desain yang relevan dengan tempat dan kebutuhan.</h2>
+          <p class="mt-6 text-base leading-8 text-slate-600">
+            Saya adalah arsitek yang memiliki latar belakang pendidikan teknik gambar bangunan dan arsitektur,
+            dengan pengalaman profesional sejak 2020. Saya terbiasa mengembangkan konsep desain, modelling,
+            rendering, hingga koordinasi tim dalam pengerjaan proyek.
+          </p>
+          <p class="mt-4 text-base leading-8 text-slate-600">
+            Pendekatan kerja saya berfokus pada kejelasan fungsi, kualitas visual, dan pemanfaatan material yang
+            sesuai dengan konteks lingkungan, terutama untuk proyek-proyek yang memiliki nilai sosial dan budaya.
+          </p>
+        </div>
+
+        <div class="grid gap-8">
+          <div class="rounded-[2rem] bg-slate-900 p-8 text-white shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-slate-300">Pendidikan</p>
+            <div class="mt-6 space-y-5">
+              <div>
+                <p class="text-lg font-semibold">SMK YSO Ninabua Wamena</p>
+                <p class="mt-1 text-sm text-slate-300">Teknik Gambar Bangunan</p>
+              </div>
+              <div>
+                <p class="text-lg font-semibold">S1 Arsitektur</p>
+                <p class="mt-1 text-sm text-slate-300">2018 - 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[2rem] bg-white p-8 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Keahlian</p>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-slate-100 p-4">
+                <p class="font-semibold text-slate-900">Ms Office</p>
+                <p class="mt-2 text-sm text-slate-600">Word, Excel, PowerPoint</p>
+              </div>
+              <div class="rounded-2xl bg-slate-100 p-4">
+                <p class="font-semibold text-slate-900">Adobe</p>
+                <p class="mt-2 text-sm text-slate-600">Photoshop, Filmora, CapCut</p>
+              </div>
+              <div class="rounded-2xl bg-slate-100 p-4">
+                <p class="font-semibold text-slate-900">Rendering</p>
+                <p class="mt-2 text-sm text-slate-600">Enscape, Lumion</p>
+              </div>
+              <div class="rounded-2xl bg-slate-100 p-4">
+                <p class="font-semibold text-slate-900">Modelling</p>
+                <p class="mt-2 text-sm text-slate-600">AutoCAD, SketchUp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman Kerja -->
+    <section class="border-y border-slate-200 bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Pengalaman</p>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">Perjalanan profesional dalam praktik arsitektur.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <div class="rounded-[2rem] border border-slate-200 p-6 shadow-sm">
+            <p class="text-sm font-semibold text-brand-700">2020 - 2022</p>
+            <h3 class="mt-3 text-xl font-semibold text-slate-900">Junior Architect</h3>
+            <p class="mt-2 text-sm text-slate-500">PT Narendara Jaya</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Terlibat dalam pengembangan gambar kerja, konsep desain, dan visualisasi proyek arsitektur.
+            </p>
+          </div>
+          <div class="rounded-[2rem] border border-slate-200 p-6 shadow-sm">
+            <p class="text-sm font-semibold text-brand-700">2023</p>
+            <h3 class="mt-3 text-xl font-semibold text-slate-900">Junior Architect</h3>
+            <p class="mt-2 text-sm text-slate-500">Bale Design</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Menangani pengembangan desain arsitektur dengan pendekatan visual yang kuat dan detail presentasi proyek.
+            </p>
+          </div>
+          <div class="rounded-[2rem] border border-slate-200 p-6 shadow-sm">
+            <p class="text-sm font-semibold text-brand-700">2024 - Sekarang</p>
+            <h3 class="mt-3 text-xl font-semibold text-slate-900">Team Leader Architect</h3>
+            <p class="mt-2 text-sm text-slate-500">PT Marioboto Bangun Jaya</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Memimpin koordinasi tim, menjaga kualitas desain, dan memastikan arah proyek tetap sesuai target.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="proyek" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Portfolio Proyek</p>
+          <h2 class="mt-4 text-3xl font-bold text-slate-900">Pilihan karya yang menampilkan pendekatan desain, konteks, dan karakter ruang.</h2>
+        </div>
+        <p class="max-w-xl text-sm leading-7 text-slate-600">
+          Kumpulan proyek berikut menyoroti pengalaman pada bangunan ibadah, hunian, villa, dan fasilitas publik dengan pendekatan desain yang kontekstual.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <article class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img src="https://via.placeholder.com/400x300" alt="Placeholder proyek GKII Jemaat Tom Bozeman Wesapot" class="h-60 w-full object-cover">
+          <div class="p-6">
+            <div class="flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-brand-700">2025</p>
+              <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">288 m2</span>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">GKII Jemaat Tom Bozeman Wesapot</h3>
+            <p class="mt-2 text-sm font-medium text-slate-500">Distrik Assotipo</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Desain gereja dengan penggunaan material bata merah dan batu alam yang menyesuaikan karakter lingkungan Papua.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img src="https://via.placeholder.com/400x300" alt="Placeholder proyek Rumah Doa" class="h-60 w-full object-cover">
+          <div class="p-6">
+            <p class="text-sm font-semibold text-brand-700">2023</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Rumah Doa</h3>
+            <p class="mt-2 text-sm font-medium text-slate-500">Lovina, Bali</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Desain rumah doa dengan konsep bentuk salib serta penggunaan material natural untuk membangun suasana yang tenang.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img src="https://via.placeholder.com/400x300" alt="Placeholder proyek Villa KG" class="h-60 w-full object-cover">
+          <div class="p-6">
+            <p class="text-sm font-semibold text-brand-700">2023</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Villa KG</h3>
+            <p class="mt-2 text-sm font-medium text-slate-500">Canggu, Bali</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Villa dengan konsep menyatu dengan alam, menghadirkan pengalaman ruang yang hangat melalui pemanfaatan material lokal.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img src="https://via.placeholder.com/400x300" alt="Placeholder proyek Pak Jendral Bintang II" class="h-60 w-full object-cover">
+          <div class="p-6">
+            <p class="text-sm font-semibold text-brand-700">2022</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Pak Jendral Bintang II</h3>
+            <p class="mt-2 text-sm font-medium text-slate-500">Canggu, Bali</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Villa bungalow dengan inspirasi rumah tradisional Bali, menggabungkan identitas lokal dan kenyamanan modern.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img src="https://via.placeholder.com/400x300" alt="Placeholder proyek Puskesmas Rawat Jalan" class="h-60 w-full object-cover">
+          <div class="p-6">
+            <p class="text-sm font-semibold text-brand-700">2022</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Puskesmas Rawat Jalan</h3>
+            <p class="mt-2 text-sm font-medium text-slate-500">Sukawati</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Bangunan kesehatan dengan pendekatan desain sederhana, efisien, dan menggunakan material lokal yang mudah diterapkan.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-slate-200">
+          <img src="https://via.placeholder.com/400x300" alt="Placeholder proyek Rumah Tinggal Keluarga" class="h-60 w-full object-cover">
+          <div class="p-6">
+            <p class="text-sm font-semibold text-brand-700">2024</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-900">Rumah Tinggal Keluarga</h3>
+            <p class="mt-2 text-sm font-medium text-slate-500">Denpasar, Bali</p>
+            <p class="mt-4 text-sm leading-7 text-slate-600">
+              Konsep rumah tinggal modern tropis dengan tata ruang yang terang, sirkulasi udara baik, dan hubungan kuat dengan area luar.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="bg-slate-900">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr] lg:px-8">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-100">Kontak</p>
+          <h2 class="mt-4 text-3xl font-bold text-white">Mari berdiskusi untuk proyek arsitektur yang profesional dan berkarakter.</h2>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-300">
+            Terbuka untuk kolaborasi, pengembangan desain, dan kebutuhan visualisasi arsitektur untuk proyek hunian, komersial, maupun fasilitas publik.
+          </p>
+        </div>
+
+        <div class="rounded-[2rem] bg-white p-8 shadow-soft">
+          <div class="space-y-6">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Email</p>
+              <a href="mailto:ronaldkogoya22@gmail.com" class="mt-2 block text-lg font-semibold text-slate-900 hover:text-brand-700">
+                ronaldkogoya22@gmail.com
+              </a>
+            </div>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">WhatsApp</p>
+              <a href="https://wa.me/6281215684830" class="mt-2 block text-lg font-semibold text-slate-900 hover:text-brand-700">
+                +62 812 1568 4830
+              </a>
+            </div>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Instagram</p>
+              <a href="https://instagram.com/rk_arsitek" class="mt-2 block text-lg font-semibold text-slate-900 hover:text-brand-700">
+                @rk_arsitek
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <p>&copy; 2026 Ronald Kogoya S.Ars. Seluruh hak cipta dilindungi.</p>
+      <p>Dirancang untuk menampilkan karya arsitektur secara profesional dan responsif.</p>
+    </div>
+  </footer>
+</body>
+</html>
